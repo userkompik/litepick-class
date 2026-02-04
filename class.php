@@ -1,6 +1,6 @@
 <?php
 
-const class_version = "1.1.8";
+const class_version = "1.1.7";
 
 // Warna teks
 const n = "\n";          // Baris baru
@@ -95,22 +95,13 @@ class Display {
 		}
 		print yh.' '.date("l").'           '.date("d/M/Y").'         '.date("H:i").' '.d."\n";
 		print " ".strtoupper($title." [".$versi."]").n;
-		// ==================== Banner ====================
-		// ==================== Banner ====================
-		$o2 = "\033[01;38;5;208m"; // Orange-like
-		$o  = "\033[1;34m";        // Blue
-		$y  = "\033[38;5;226m";    // Yellow
-		$p  = "\033[1;37m";        // White
-		$d  = "\033[0m";            // Reset
-
-		// Spaces to push author info to the right
-		$sp = str_repeat(" ", 5);
-
-	print $o2."╔═╗╔═╗╔═╗╦═╗╔═╗{$sp}Author    : Azizbek Ahmadjonov\n";
-	print $o2."╠═╣╔═╝╠═╝╠╦╝║ ║{$sp}Telegram  : @az_profital\n"; 
-	print $o2."╩ ╩╚═╝╩  ╩╚═╚═╝{$sp}Instagram : azizbek_akhmadjonoff\n\n";
-
-
+		print o2." •     •┓  ┏━┓┓┏  Author : @fat9ght\n";
+		print o." ┓┏┓┓┏┏┓┃  ┃┗┛┗┫╋ Youtube: youtube.com/@iewil\n";
+		print y." ┗┗ ┗┻┛┗┗  ┗━┛┗┛┗ Tele   : t.me/MaksaJoin\n\n";
+		print p." Special Tanks to \n";
+		print str_pad("@PetapaGenit2, @Zhy_08, @IPeop", 45, " ", STR_PAD_BOTH).n;
+		print str_pad("@itsaoda, @pr4bu_51l1w4n61, @MetalFrogs", 45, " ", STR_PAD_BOTH).n;
+		print mp.str_pad("FREE SCRIPT NOT FOR SALE", 45, " ", STR_PAD_BOTH).d.n.n;
 	}
 	static function ipApi(){
 		$r = json_decode(file_get_contents("http://ip-api.com/json"));
@@ -380,7 +371,4 @@ class Cloudflare {
 		return $data;
 	}
 }
-
 ?>
-
-
