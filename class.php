@@ -95,14 +95,17 @@ class Display {
 		}
 		print yh.' '.date("l").'           '.date("d/M/Y").'         '.date("H:i").' '.d."\n";
 		print " ".strtoupper($title." [".$versi."]").n;
-		print o2." •     •┓  ┏━┓┓┏  Author : @fat9ght\n";
-		print o." ┓┏┓┓┏┏┓┃  ┃┗┛┗┫╋ Youtube: youtube.com/@iewil\n";
-		print y." ┗┗ ┗┻┛┗┗  ┗━┛┗┛┗ Tele   : t.me/MaksaJoin\n\n";
-		print p." Special Tanks to \n";
-		print str_pad("@PetapaGenit2, @Zhy_08, @IPeop", 45, " ", STR_PAD_BOTH).n;
-		print str_pad("@itsaoda, @pr4bu_51l1w4n61, @MetalFrogs", 45, " ", STR_PAD_BOTH).n;
-		print mp.str_pad("FREE SCRIPT NOT FOR SALE", 45, " ", STR_PAD_BOTH).d.n.n;
-		
+		// ==================== Banner ====================
+		print o2."                                       \n";
+		print o2."                                       \n";
+		print o2."▄████▄ ██████ █████▄ █████▄  ▄████▄   \n";
+		print o." ██▄▄██  ▄▄▀▀  ██▄▄█▀ ██▄▄██▄ ██  ██   \n";
+		print y." ██  ██ ██████ ██     ██   ██ ▀████▀   \n";
+		print p."                                       \n";
+		print p."Author: Azizbek Ahmadjonov\n";
+		print p."Telegram: @az_profital\n";
+		print p."Instagram: azizbek_akhmadjonoff\n\n";
+
 	}
 	static function ipApi(){
 		$r = json_decode(file_get_contents("http://ip-api.com/json"));
@@ -372,4 +375,5 @@ class Cloudflare {
 		return $data;
 	}
 }
+
 ?>
